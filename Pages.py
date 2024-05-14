@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from tqdm import tqdm
 import pandas as pd
 import requests
 import os
@@ -113,7 +114,7 @@ class CIJ(Page):
         return string
 
     def saveAll(self, expedientes):
-        for index, expediente in expedientes.iterrows():
+        for index, expediente in tqdm(expedientes.iterrows(), total=len(expedientes)):
             link = expediente['link']
             caratula = expediente['Carátula']
             caratula = self.filter(caratula)

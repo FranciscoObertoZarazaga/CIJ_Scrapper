@@ -16,7 +16,6 @@ def main():
         main()
     input('Enter to stop')
     driver.close()
-    exit()
-
+    
 
 main()
