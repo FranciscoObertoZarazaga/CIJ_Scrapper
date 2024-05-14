@@ -1,0 +1,11 @@
+__pycache__/
+.idea/
+.idea/*.iml
+Pipfile
+build/
+excel/resultados/
+main.spec
+excel/
+tools/__pycache__/
+__pycache__/
+.idea/
